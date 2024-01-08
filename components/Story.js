@@ -21,7 +21,12 @@ const Story = () => {
     
   ];
 
-  const { data: session } = useSession();
+
+  const session = {
+    user: {
+      image: "https://randomuser.me/api/portraits/men/50.jpg"
+  }
+  }
 
   return (
     <div className="px-4 bg-white rounded-[17px] shadow-md">

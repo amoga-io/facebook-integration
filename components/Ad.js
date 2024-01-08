@@ -11,7 +11,13 @@ import Modal from './Modal'
 const Post = ({ data, id }) => {
     const [open, setOpen] = React.useState(false);
 
-    const { data: session } = useSession();
+  
+    const session = {
+        user: {
+          image: "https://randomuser.me/api/portraits/men/50.jpg"
+      }
+      }
+    
 
     const isAdmin = (post_data_id, session_id) => {
         if (post_data_id === session_id) return true;
@@ -42,14 +48,7 @@ const Post = ({ data, id }) => {
 
                 <div className="text-gray-500 text-[26px] flex gap-4">
                     <FiMoreHorizontal className="cursor-pointer" />
-                    {isAdmin(data.id, session?.user?.uid) && (
-                        <MdOutlineClose
-                            className="cursor-pointer"
-                            onClick={() => {
-                                deleteDoc(doc(db, "posts", id));
-                            }}
-                        />
-                    )}
+                   
                 </div>
             </div>
 

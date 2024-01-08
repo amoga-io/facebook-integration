@@ -6,8 +6,11 @@ import { CgMenuGridO } from "react-icons/cg";
 import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
-  const { data: session } = useSession();
-
+  const session = {
+    user: {
+      image: "https://randomuser.me/api/portraits/men/50.jpg"
+  }
+  }
   return (
     <div className="py-2 px-4 bg-white shadow-md flex justify-between items-center top-0 sticky z-50">
       <div className="flex items-center gap-2">
@@ -55,7 +58,7 @@ const Navbar = () => {
           className="w-[44px] cursor-pointer rounded-full"
           src={session?.user?.image}
           alt="dp"
-          onClick={signOut}
+          // onClick={signOut}
         />
       </div>
     </div>

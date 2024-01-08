@@ -1,11 +1,16 @@
 import React from "react";
 
 import LeftSidebarLink from "./LeftSidebarLink";
-import { useSession } from "next-auth/react";
 import { BsChevronDown } from "react-icons/bs";
 
 const LeftSidebar = () => {
-  const { data: session } = useSession();
+
+  const session = {
+    user: {
+      image: "https://randomuser.me/api/portraits/men/50.jpg"
+  }
+  }
+
 
   return (
     <div className="px-4 fixed mt-5 hidden lg:block">

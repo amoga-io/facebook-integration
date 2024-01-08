@@ -24,7 +24,12 @@ const WhatsOnYourMind = () => {
 
   const fPicker = useRef(null);
 
-  const { data: session } = useSession();
+
+  const session = {
+    user: {
+      image: "https://randomuser.me/api/portraits/men/50.jpg"
+  }
+  }
 
   const addImageToPost = (e) => {
     const reader = new FileReader();
