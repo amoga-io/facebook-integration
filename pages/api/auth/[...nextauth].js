@@ -1,6 +1,11 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
+export const config = {
+  runtime: 'experimental-edge',
+}
+
+
 export const authOptions = {
   // Configure one or more authentication providers
   providers: [
