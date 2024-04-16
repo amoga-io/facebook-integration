@@ -60,7 +60,7 @@ export default function Example({ open, setOpen }) {
                             <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                                 <div className="bg-white px-2 pb-2 pt-2 sm:p-6 sm:pb-4">
                                     <iframe
-                                        src={"https://canvas2.amoga.app/applications/4fb3b93a-c322-4565-94ec-5d3dd1076e37?height=500"}
+                                        src={"https://forms.amoga.app/applications/1219d98f-7cda-4073-a2be-e9efec173d28?height=500"}
                                         title="iframe"
                                         style={{
                                             width: "100%",

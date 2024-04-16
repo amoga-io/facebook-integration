@@ -11,13 +11,13 @@ import Modal from './Modal'
 const Post = ({ data, id }) => {
     const [open, setOpen] = React.useState(false);
 
-  
+
     const session = {
         user: {
-          image: "https://randomuser.me/api/portraits/men/50.jpg"
-      }
-      }
-    
+            image: "https://randomuser.me/api/portraits/men/50.jpg"
+        }
+    }
+
 
     const isAdmin = (post_data_id, session_id) => {
         if (post_data_id === session_id) return true;
@@ -32,7 +32,7 @@ const Post = ({ data, id }) => {
                 <div className="flex gap-2">
                     <img
                         className="w-[44px] h-[44px] object-cover rounded-full"
-                        src={"https://scontent-maa2-2.xx.fbcdn.net/v/t39.30808-1/407718237_122096687438142211_9223320405286086648_n.png?stp=c0.5000x0.5000f_dst-webp_e15_p420x420_q70_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent-maa2-2.xx&_nc_cat=101&_nc_ohc=HzVbxO_SkJcAX8voJNa&ccb=1-7&_nc_sid=4da83f&oh=00_AfDi1hOebRyrmtT73ZbrEpKyP2515FXDItsyyWSPx3zwcQ&oe=65A15D69"}
+                        src={"https://cdn.amoga.io/default/favicon.png"}
 
                         alt="dp"
                     />
@@ -48,17 +48,18 @@ const Post = ({ data, id }) => {
 
                 <div className="text-gray-500 text-[26px] flex gap-4">
                     <FiMoreHorizontal className="cursor-pointer" />
-                   
+
                 </div>
             </div>
 
-            <p className="px-4 mt-[15px] text-gray-800 font-normal">No Brokerage Posted Owner
-                2bhk Independent Apartment for sale near @ITPL Whitefield Main Road, Bangalore East
-                BDA and RERA approved project.
-                100% Vaastu Compliant</p>
+            <p className="px-4 mt-[15px] text-gray-800 font-normal">For professionals and teams to streamline sales processes & optimize sales performance
+
+                Manage tasks, projects, and processes to fuel collaboration and efficiency at scale.</p>
 
             <div className="mt-[15px]">
-                {<img src={"https://scontent-maa2-2.xx.fbcdn.net/v/t39.30808-6/415059069_796035112538286_1800866195671143881_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=vsJceBkobL0AX_-hlIb&_nc_ht=scontent-maa2-2.xx&oh=00_AfAKL298MMz17e8B7_YXpAQiD_9n33SdVzY0Vbii7HsWSg&oe=65A03591"} alt="post pic" />}
+                {<img
+                    src={"https://www.amoga.io/wp-content/uploads/2024/02/Sales-CRM-2-2048x1207.png"}
+                    alt="post pic" />}
             </div>
 
             <div className="mt-[-4]  bg-gray-300 flex justify-end">
