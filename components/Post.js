@@ -11,7 +11,7 @@ import { db } from "../firebase";
 const Post = ({ data, id }) => {
   const { data: session } = useSession();
 
-
+  console.log("datadata888888", data)
   const isAdmin = (post_data_id, session_id) => {
     if (post_data_id === session_id) return true;
     else if (session_id === "103122479951529079566") return true;
